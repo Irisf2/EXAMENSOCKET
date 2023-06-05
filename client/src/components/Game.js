@@ -12,7 +12,7 @@ function Game({ channel, setChannel }) {
     setPlayersJoined(event.watcher_count === 2);
   });
   if (!playersJoined) {
-    return <div> Waiting for other player to join...</div>;
+    return <div> Esperando al jugador...</div>;
   }
   return (
     <div className="gameContainer">
@@ -33,10 +33,10 @@ function Game({ channel, setChannel }) {
         }}
       >
         {" "}
-        Leave Game
+        Dejar el juego
       </button>
-      {result.state === "won" && <div> {result.winner} Won The Game</div>}
-      {result.state === "tie" && <div> Game Tieds</div>}
+      {result.state === "won" && <div> {result.winner} Gano el juego</div>}
+      {result.state === "tie" && <div> EMPATE </div>}
     </div>
   );
 }

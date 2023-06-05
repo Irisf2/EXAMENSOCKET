@@ -10,7 +10,7 @@ function JoinGame() {
     const response = await client.queryUsers({ name: { $eq: rivalUsername } });
 
     if (response.users.length === 0) {
-      alert("User not found");
+      alert("Usuario no encontrado");
       return;
     }
 
@@ -29,14 +29,14 @@ function JoinGame() {
         </Channel>
       ) : (
         <div className="joinGame">
-          <h4>Create Game</h4>
+          <h4>Crear Juego</h4>
           <input
-            placeholder="Username of rival..."
+            placeholder="Nombre del rival..."
             onChange={(event) => {
               setRivalUsername(event.target.value);
             }}
           />
-          <button onClick={createChannel}> Join/Start Game</button>
+          <button onClick={createChannel}> Iniciar Juego</button>
         </div>
       )}
     </>

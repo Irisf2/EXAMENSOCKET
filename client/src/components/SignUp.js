@@ -21,33 +21,33 @@ function SignUp({ setIsAuth }) {
   };
   return (
     <div className="signUp">
-      <label> Sign Up</label>
+      <label> Registrarse</label>
       <input
-        placeholder="First Name"
+        placeholder="Nombre"
         onChange={(event) => {
           setUser({ ...user, firstName: event.target.value });
         }}
       />
       <input
-        placeholder="Last Name"
+        placeholder="Apellido"
         onChange={(event) => {
           setUser({ ...user, lastName: event.target.value });
         }}
       />
       <input
-        placeholder="Username"
+        placeholder="Usuario"
         onChange={(event) => {
           setUser({ ...user, username: event.target.value });
         }}
       />
       <input
-        placeholder="Password"
+        placeholder="Contraseña"
         type="password"
         onChange={(event) => {
           setUser({ ...user, password: event.target.value });
         }}
       />
-      <button onClick={signUp}> Sign Up</button>
+      <button onClick={signUp}> Registrar</button>
     </div>
   );
 }

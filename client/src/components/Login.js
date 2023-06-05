@@ -23,22 +23,22 @@ function Login({ setIsAuth }) {
   };
   return (
     <div className="login">
-      <label> Login</label>
+      <label> Iniciar Sesión</label>
 
       <input
-        placeholder="Username"
+        placeholder="Usuario"
         onChange={(event) => {
           setUsername(event.target.value);
         }}
       />
       <input
-        placeholder="Password"
+        placeholder="Contraseña"
         type="password"
         onChange={(event) => {
           setPassword(event.target.value);
         }}
       />
-      <button onClick={login}> Login</button>
+      <button onClick={login}> Ingresar</button>
     </div>
   );
 }

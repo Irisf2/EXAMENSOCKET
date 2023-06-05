@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #76a2ff;
+  background-color: #474747;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 .signUp input {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 5px solid #cc82e9;
   border-radius: 4px;
   width: 300px;
   height: 30px;
@@ -33,10 +33,14 @@ body {
 .signUp button {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #faf7f3;
+  color:#474747;
+  background-color:rgb(218, 178, 218);
+  font-weight:bold ;
   border-radius: 4px;
   width: 320px;
   height: 30px;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -44,8 +48,9 @@ body {
 .signUp label {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  color: white;
+  font-weight:bold ;
+  font-size: 28px;
+  color: rgb(218, 153, 228);
 }
 
 .board {
@@ -81,22 +86,28 @@ body {
 
 h4 {
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: rgb(223, 135, 235);
   font-size: 30px;
 }
 
 .joinGame input {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 5px solid #e7b9dc;
+  
   border-radius: 4px;
   width: 220px;
   height: 30px;
 }
 .joinGame button {
   padding: 10px;
+  margin-left: 6px;
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 220px;
+  color:#474747;
+  font-weight: bold;
   height: 51px;
+  background-color:rgb(218, 178, 218);
+  font-size: 14px;
   cursor: pointer;
 }
